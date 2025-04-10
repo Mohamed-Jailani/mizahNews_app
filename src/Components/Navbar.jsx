@@ -5,7 +5,7 @@ const Navbar = ({setCategory}) => {
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           Mizah
         </a>
         <button
@@ -22,19 +22,19 @@ const Navbar = ({setCategory}) => {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <div className="nav-link" onClick={()=>setCategory("technology")}>Technology</div>
+              <button className="nav-link " onClick={()=>setCategory("technology")}>Technology</button>
             </li>
             <li className="nav-item">
-              <div className="nav-link" onClick={()=>setCategory("business")}>Business</div>
+              <button className="nav-link" onClick={()=>setCategory("business")}>Business</button>
             </li>
             <li className="nav-item">
-              <div className="nav-link" onClick={()=>setCategory("health")}>Health</div>
+              <button className="nav-link" onClick={()=>setCategory("health")}>Health</button>
             </li>
             <li className="nav-item">
-              <div className="nav-link" onClick={()=>setCategory("sports")}>Sports</div>
+              <button className="nav-link" onClick={()=>setCategory("sports")}>Sports</button>
             </li>
             <li className="nav-item">
-              <div className="nav-link" onClick={()=>setCategory("entertainment")}>Entertainment</div>
+              <button className="nav-link" onClick={()=>setCategory("entertainment")}>Entertainment</button>
             </li>
           </ul>
         </div>
